@@ -3,6 +3,7 @@ import "./App.css";
 import Navbar from "./components/shared/Navbar";
 import type { ITechnology } from "./utils/types";
 import Technologies from "./components/ui/technologies/Technologies";
+import Hero from "./components/ui/hero/Hero";
 
 function App() {
   const [data, setData] = useState<ITechnology[]>([]);
@@ -15,8 +16,9 @@ function App() {
 
   return (
     <>
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-6xl mx-auto">
         <Navbar></Navbar>
+        <Hero></Hero>
         <Technologies data={data}></Technologies>
       </div>
     </>

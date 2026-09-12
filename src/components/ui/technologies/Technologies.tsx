@@ -33,7 +33,7 @@ const Technologies = ({ data }: { data: ITechnology[] }) => {
       />
       {/* text */}
       <div>
-        <h1 className="text-2xl font-semibold ">
+        <h1 className="text-4xl font-semibold ">
           Explore the ,
           <span className="bg-linear-to-r from-[#EC4899] to-[#8B5CF6] bg-clip-text text-transparent font-bold text-4xl">
             Technologies
