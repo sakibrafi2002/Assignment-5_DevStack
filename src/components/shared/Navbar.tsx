@@ -24,7 +24,7 @@ const Navbar = () => {
         }
     ]
   return (
-    <div className="flex justify-between items-center border border-b border-gray-200 py-3">
+    <div className="flex justify-between items-center border border-b border-gray-100 py-3">
         {/* logo */}
         <div>
             <img src={logo} className="" alt="logo"></img>

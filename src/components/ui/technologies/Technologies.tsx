@@ -34,19 +34,19 @@ const Technologies = ({ data }: { data: ITechnology[] }) => {
       {/* text */}
       <div>
         <h1 className="text-4xl font-semibold ">
-          Explore the ,
-          <span className="bg-linear-to-r from-[#EC4899] to-[#8B5CF6] bg-clip-text text-transparent font-bold text-4xl">
+          Explore the
+          <span className="ml-2 bg-linear-to-r from-[#EC4899] to-[#8B5CF6] bg-clip-text text-transparent font-bold text-4xl">
             Technologies
           </span>
         </h1>
-        <p className="text-sm text-gray-500">
+        <p className="text-1xl text-gray-500 mt-2">
           Pick one technology per category to build your ideal stack.
         </p>
       </div>
       {/* card */}
-      <div className="grid grid-cols-4 gap-4">
+      <div className="grid grid-cols-4 gap-4 mt-12">
         {/* technologies */}
-        <div className="col-span-3 grid grid-cols-3 gap-4">
+        <div className="col-span-3 grid grid-cols-3 gap-8">
           {data.map((ele) => {
             return (
               <div key={ele.id}>

@@ -1,4 +1,5 @@
 import type { ITechnology } from "../../../utils/types";
+import { FaStar } from "react-icons/fa";
 
 interface TechnologyProps {
   data: ITechnology;
@@ -11,19 +12,22 @@ const TechnologyCard = ({ data, handleAdd, stackList }: TechnologyProps) => {
     data;
   const ids = stackList.map((ele) => ele.id);
   return (
-    <div>
+    <div className="bg-gray-100 p-05 rounded-md shadow-md hover:shadow-lg transition-shadow duration-300 p-2">
       <div className="flex justify-between items-center">
         <img src={icon} alt="icon" className="w-8"></img>
-        <span className="text-xs py-1 px-3 rounded-full bg-yellow-500/50 border border-yellow-500">
+        <span className="text-xs py-1 px-3 rounded-full bg-blue-200 border border-white-600">
           {badge}
         </span>
       </div>
-      <p>{name}</p>
-      <p>{description}</p>
-      <div>
-        <p>{category}</p>
-        <p>{difficulty}</p>
-        <p>{rating}</p>
+      <p className="font-bold">{name}</p>
+      <p className="text-sm text-gray-500 mt-2 mb-2">{description}</p>
+      <div className="flex justify-between items-center text-sm text-gray-400 mb-2">
+        <p className="bg-gray-100 text-gray-600">{category}</p>
+        <p className="bg-gray-100 text-gray-600">{difficulty}</p>
+        <p className="flex items-center gap-1">
+          <FaStar className="text-yellow-400" aria-hidden="true" />
+          {rating}
+        </p>
       </div>
       <button
         onClick={() => handleAdd(data)}
