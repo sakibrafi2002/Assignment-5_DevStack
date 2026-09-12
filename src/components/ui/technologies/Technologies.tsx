@@ -1,21 +1,36 @@
 import { useState } from "react";
 import type { ITechnology } from "../../../utils/types";
 import TechnologyCard from "./TechnologyCard";
+import { ToastContainer, toast } from "react-toastify";
 
 const Technologies = ({ data }: { data: ITechnology[] }) => {
   const [stack, setStack] = useState<ITechnology[]>([]);
 
   const addToStack = (ele: ITechnology) => {
     setStack([ele, ...stack]);
+    toast("Added to stack");
   };
 
   const deleteFromStack = (id: string) => {
     const stackList = stack.filter((ele) => ele.id !== id);
     setStack(stackList);
+    toast("deleted from stack");
   };
 
   return (
     <div>
+      <ToastContainer
+        position="bottom-right"
+        autoClose={2000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick={false}
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="light"
+      />
       {/* text */}
       <div>
         <h1 className="text-2xl font-semibold ">
