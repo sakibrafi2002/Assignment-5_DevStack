@@ -17,6 +17,11 @@ const Technologies = ({ data }: { data: ITechnology[] }) => {
     toast("deleted from stack");
   };
 
+  const removeAll = () => {
+    setStack([]);
+    toast.success("All technologies removed from your stack");
+  };
+
   return (
     <div>
       <ToastContainer
@@ -102,7 +107,7 @@ const Technologies = ({ data }: { data: ITechnology[] }) => {
           {Boolean(stack.length) && (
             <button
               className="w-full py-3 rounded-md cursor-pointer text-red-400 border border-red-500 font-bold"
-              onClick={() => setStack([]) }
+              onClick={removeAll}
             >
               Remove all
             </button>
