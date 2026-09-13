@@ -26,7 +26,7 @@ const Navbar = () => {
     },
   ];
   return (
-    <div className="flex justify-between items-center border-b border-gray-100 py-3">
+    <div className="sticky top-0 bg-white/10 backdrop-blur-md border-b border-gray-200 rounded-xl flex justify-between items-center py-3">
       <div className="sm:hidden">
         <RxHamburgerMenu />
       </div>
