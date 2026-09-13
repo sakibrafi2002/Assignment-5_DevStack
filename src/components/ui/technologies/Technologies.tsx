@@ -79,7 +79,7 @@ const Technologies = ({ data }: { data: ITechnology[] }) => {
                       <img src={ele.icon} className="w-6" alt="category" />
                       <div>
                         <p>{ele.name}</p>
-                        <p>{ele.category}</p>
+                        <p className="text-xs text-gray-500">{ele.category}</p>
                       </div>
                     </div>
                     <div>
@@ -102,7 +102,7 @@ const Technologies = ({ data }: { data: ITechnology[] }) => {
           {Boolean(stack.length) && (
             <button
               className="w-full py-3 rounded-md cursor-pointer text-red-400 border border-red-500 font-bold"
-              onClick={() => setStack([])}
+              onClick={() => setStack([]) }
             >
               Remove all
             </button>
