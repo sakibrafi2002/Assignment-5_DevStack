@@ -1,4 +1,5 @@
 import logo from "../../assets/logo-text.png";
+import { RxHamburgerMenu } from "react-icons/rx";
 
 const Navbar = () => {
   const path = "/";
@@ -26,6 +27,9 @@ const Navbar = () => {
   ];
   return (
     <div className="flex justify-between items-center border-b border-gray-100 py-3">
+      <div className="sm:hidden">
+        <RxHamburgerMenu />
+      </div>
       {/* logo */}
       <div>
         <a href="/">
@@ -33,7 +37,7 @@ const Navbar = () => {
         </a>
       </div>
       {/* menu */}
-      <ul className="flex items-center gap-4">
+      <ul className="hidden sm:flex items-center gap-4">
         {items.map((ele) => {
           return (
             <li

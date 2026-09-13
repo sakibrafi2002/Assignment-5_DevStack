@@ -4,9 +4,9 @@ const Footer = () => {
   return (
     <div className="bg-gray-50 mt-12">
       {/* Upper Footer */}
-      <div className="grid grid-cols-4 gap-8 p-8 border-b border-gray-200">
+      <div className="grid grid-cols-1 text-center md:text-start md:grid-cols-4 gap-8 p-8 border-b border-gray-200">
         {/* Logo & Description */}
-        <div>
+        <div className="flex flex-col items-center md:block">
           <img src={logo} alt="Logo" />
           <p className="text-sm text-gray-500 mt-2">
             Curated tools, technologies, and resources for developers building
@@ -33,7 +33,7 @@ const Footer = () => {
         </div>
 
         {/* Product */}
-        <div>
+        <div className="hidden md:block">
           <h3 className="font-semibold text-gray-800">Product</h3>
           <ul className="mt-2">
             <li>
@@ -55,7 +55,7 @@ const Footer = () => {
         </div>
 
         {/* Company  */}
-        <div>
+        <div className="hidden md:block">
           <h3 className="font-semibold text-gray-800">Company</h3>
           <ul className="mt-2">
             <li>
@@ -77,21 +77,21 @@ const Footer = () => {
         </div>
 
         {/* Legal */}
-        <div>
-            <h3 className="font-semibold text-gray-800">Legal</h3>
-            <ul className="mt-2">
-              <li>
-                <a href="#" className="text-sm text-gray-500 hover:text-gray-700">
-                  Privacy Policy
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-sm text-gray-500 hover:text-gray-700">
-                  Terms of Service
-                </a>
-              </li>
-            </ul>
-         </div>
+        <div className="hidden md:block">
+          <h3 className="font-semibold text-gray-800">Legal</h3>
+          <ul className="mt-2">
+            <li>
+              <a href="#" className="text-sm text-gray-500 hover:text-gray-700">
+                Privacy Policy
+              </a>
+            </li>
+            <li>
+              <a href="#" className="text-sm text-gray-500 hover:text-gray-700">
+                Terms of Service
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
 
       {/* Lower Footer */}
@@ -100,16 +100,16 @@ const Footer = () => {
           &copy; 2026 DevStack. All rights reserved.
         </p>
         <ul className="flex gap-4">
-            <li className="text-sm text-gray-500 text-center">
-              <a href="#" className="text-sm text-gray-500 hover:text-gray-700">
-                Privacy Policy
-              </a>
-            </li>
-            <li className="text-sm text-gray-500 text-center">
-              <a href="#" className="text-sm text-gray-500 hover:text-gray-700">
-                Terms
-              </a>
-            </li>
+          <li className="text-sm text-gray-500 text-center">
+            <a href="#" className="text-sm text-gray-500 hover:text-gray-700">
+              Privacy Policy
+            </a>
+          </li>
+          <li className="text-sm text-gray-500 text-center">
+            <a href="#" className="text-sm text-gray-500 hover:text-gray-700">
+              Terms
+            </a>
+          </li>
         </ul>
       </div>
     </div>

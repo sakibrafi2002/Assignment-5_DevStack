@@ -49,9 +49,9 @@ const Technologies = ({ data }: { data: ITechnology[] }) => {
         </p>
       </div>
       {/* card */}
-      <div className="grid grid-cols-4 gap-4 mt-12">
+      <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-4 gap-4 mt-12">
         {/* technologies */}
-        <div className="col-span-3 grid grid-cols-3 gap-8">
+        <div className="sm:col-span-2 lg:col-span-3 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {data.map((ele) => {
             return (
               <div key={ele.id}>
@@ -65,7 +65,7 @@ const Technologies = ({ data }: { data: ITechnology[] }) => {
           })}
         </div>
         {/* panel */}
-        <div className="col-span-1 space-y-3">
+        <div className="sm:col-span-1 space-y-3">
           <div>
             <p className="text-xl font-bold">Your Stack</p>
             <p className="text-sm text-gray-400">
