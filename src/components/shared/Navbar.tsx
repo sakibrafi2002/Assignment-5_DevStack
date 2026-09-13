@@ -9,19 +9,19 @@ const Navbar = () => {
     },
     {
       label: "Technologies",
-      url: "/technologies",
+      url: "#",
     },
     {
       label: "Projects",
-      url: "/project",
+      url: "#",
     },
     {
       label: "About",
-      url: "/about",
+      url: "#",
     },
     {
       label: "Contact",
-      url: "/contact",
+      url: "#",
     },
   ];
   return (
