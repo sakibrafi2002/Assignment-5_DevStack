@@ -15,10 +15,10 @@ const Hero = () => {
           </p>
           <div>
             <button className="bg-linear-to-r from-[#F97316] to-[#EC4899] text-white font-bold py-2 px-4 rounded mr-4">
-              Explore Technologies
+              <a href="#" className="text-white hover:text-[#240b18]">Explore Technologies</a>  
             </button>
             <button className="border border-white-500 text-white-200 font-bold py-2 px-4 rounded">
-              Learn More
+              <a href="#" className="text-black hover:text-[#8d4c6d]">Learn More</a>
             </button>
           </div>
         </div>
