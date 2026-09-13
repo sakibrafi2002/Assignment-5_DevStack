@@ -27,7 +27,7 @@ const Navbar = () => {
   ];
   return (
     <div className="sticky top-0 bg-white/10 backdrop-blur-md border-b border-gray-200 rounded-xl flex justify-between items-center py-3">
-      <div className="sm:hidden">
+      <div className="p-3 sm:hidden">
         <RxHamburgerMenu />
       </div>
       {/* logo */}
