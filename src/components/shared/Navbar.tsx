@@ -1,4 +1,5 @@
 import logo from "../../assets/logo-text.png";
+
 const Navbar = () => {
     const path = "/"
     const items = [

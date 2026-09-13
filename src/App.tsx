@@ -4,6 +4,7 @@ import Navbar from "./components/shared/Navbar";
 import type { ITechnology } from "./utils/types";
 import Technologies from "./components/ui/technologies/Technologies";
 import Hero from "./components/ui/hero/Hero";
+import Footer from "./components/shared/Footer";
 
 function App() {
   const [data, setData] = useState<ITechnology[]>([]);
@@ -20,6 +21,7 @@ function App() {
         <Navbar></Navbar>
         <Hero></Hero>
         <Technologies data={data}></Technologies>
+        <Footer></Footer>
       </div>
     </>
   );

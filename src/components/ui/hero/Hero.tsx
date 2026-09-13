@@ -1,6 +1,6 @@
 import banner from "../../../assets/banner-stack.png";
 
-export const Hero = () => {
+const Hero = () => {
   return (
     <>
       <div className="flex justify-between items-center gap-4">

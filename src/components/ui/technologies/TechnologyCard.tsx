@@ -12,7 +12,7 @@ const TechnologyCard = ({ data, handleAdd, stackList }: TechnologyProps) => {
     data;
   const ids = stackList.map((ele) => ele.id);
   return (
-    <div className="bg-gray-100 p-05 rounded-md shadow-md hover:shadow-lg transition-shadow duration-300 p-2">
+    <div className="bg-gray-50 p-05 rounded-r-2xl shadow-md hover:shadow-lg transition-shadow duration-300 p-2">
       <div className="flex justify-between items-center">
         <img src={icon} alt="icon" className="w-8"></img>
         <span className="text-xs py-1 px-3 rounded-full bg-blue-200 border border-white-600">
